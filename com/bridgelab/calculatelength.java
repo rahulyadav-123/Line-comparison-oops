@@ -3,10 +3,9 @@ package com.bridgelab;
 import java.util.Scanner;
 
 public class calculatelength {
-	
 	double length;
 
-	public CalculateLength(int x1, int y1, int x2, int y2){
+	public CalculateLength(int x1, int y1, int x2, int y2) {
 		length = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 	}
 
@@ -19,10 +18,10 @@ public class calculatelength {
 		length2 = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 	}
 
-	}
+}
 
-	public class LineComparison {
-		public static void main(String[] args) {
+ 	public class LineComparison {
+ 		public static void main(String[] args) {
 		System.out.println("Welcome to line comparison computation program");
 
 		int x1, x2, y1, y2;
@@ -58,7 +57,19 @@ public class calculatelength {
 
 		System.out.println("Equality of two line: " + lineOneDouble.equals(lineTwoDouble));
 
+		int check = lineOneDouble.compareTo(lineTwoDouble);
+		
+		if(check == 0){
+			System.out.println("The length of line 1 is equals to line 2");
+		    }
+
+		else if(check > 0){
+			System.out.println("The length of line 1 is greater than  line 2");
+                   }
+		else
+			System.out.println("The length of line 1 is less than line 2");
+   
 	}
 
 }
-	
+}
