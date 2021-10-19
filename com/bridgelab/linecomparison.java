@@ -40,6 +40,11 @@ public class linecomparison {
 			
 			CalculateLength cl = new CalculateLength(x1,y1,x2,y2);
 			System.out.println("length : "+cl.length);
+			Double lineOneDouble = cl.length;
+			Double lineTwoDouble = cetl.length2;
+
+		System.out.println("Equality of two line: " + lineOneDouble.equals(lineTwoDouble));
+
 			 
 		}
 
